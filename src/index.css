@@ -98,6 +98,7 @@ li{
   flex-wrap: wrap;
   padding: 48.11px 123px;
   column-gap: 1.33%;
+  row-gap:43.11px;
 }
 .tshirtcard {
   flex-basis: 24%;
@@ -156,7 +157,7 @@ li{
   padding-top: 9.5px;
   padding-bottom: 9.5px;
   min-width: 36px;
-  margin-bottom: 48.11px;
+  /* margin-bottom: 48.11px; */
 }
 .tshirtGridHeading{
     display: flex;
@@ -201,7 +202,11 @@ li{
 }
 
 /* button css */
-
+.viewall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .viewall button{
     background-color: #770015;
     border: none;
@@ -215,8 +220,8 @@ li{
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    margin-bottom: 64px;
 }
-
 
 /* bannner2 */
 
@@ -294,4 +299,35 @@ color: #1C1C1C;
     color: #1C1C1C;
     }
 
-
+    .secondCardGridParent{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 123px;
+      justify-content: space-evenly;
+      row-gap: 29px;
+    }
+.secondCard_img{
+position: relative;
+width: 100%;
+}
+.secondCard_img img{
+  width:100%;
+}
+.secondCard_name{
+  position: absolute;
+  background: linear-gradient(111.49deg, rgba(255, 255, 255, 0.4) -8.95%, rgba(255, 255, 255, 0.01) 114%);
+  backdrop-filter: blur(32px);
+  bottom: 0;
+  font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+color: #FFFFFF;
+padding: 20.62px 0;
+width: 100%;
+text-align: center;
+}
+.Card{
+  flex-basis: 30%;
+}

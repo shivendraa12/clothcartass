@@ -1,15 +1,108 @@
 
 import './App.css';
 import Banner from './Components/Banner/Banner';
-import { TshirtGrid } from './Components/Card/TshirtGrid';
+import  TshirtGrid  from './Components/Card/TshirtGrid';
 import Bannertwo from './Components/Bannertwo/Bannertwo';
-import Button from './Components/Button/Button';
 import Categoriesbanner from './Components/Categoriesbanner/Categoriesbanner';
 import Categorieslist from './Components/Categorieslist/Categorieslist';
 import Contactus from './Components/Contactus/Contactus';
 import Hurryup from './Components/Hurryup/Hurryup';
 import Navbar from './Components/Navbar/Navbar';
 import Stylishtees from './Components/Stylishtees/Stylishtees';
+import SecondCardGrid from './Components/2ndCard/2ndCardGrid';
+
+
+
+
+const tshirtData = [
+  {
+    tshirtImage: "Rectangle 3",
+    tshirtBrandName: "Men Henley Neck ",
+    tshirtStyle: "Full Sleeve Red Wine",
+    tshirtPrice: "₹399",
+    tshirtCutOffPrice: "₹1299",
+  },
+  {
+    tshirtImage: "Rectangle 4",
+    tshirtBrandName: "Men Henley Neck ",
+    tshirtStyle: "Full Sleeve Red Wine",
+    tshirtPrice: "₹399",
+    tshirtCutOffPrice: "₹1299",
+  },
+  {
+    tshirtImage: "Rectangle 5",
+    tshirtBrandName: "Men Henley Neck ",
+    tshirtStyle: "Full Sleeve Red Wine",
+    tshirtPrice: "₹399",
+    tshirtCutOffPrice: "₹1299",
+  },
+  {
+    tshirtImage: "Rectangle 6",
+    tshirtBrandName: "Men Henley Neck ",
+    tshirtStyle: "Full Sleeve Red Wine",
+    tshirtPrice: "₹399",
+    tshirtCutOffPrice: "₹1299",
+  },
+  {
+    tshirtImage: "Rectangle 3",
+    tshirtBrandName: "Men Henley Neck ",
+    tshirtStyle: "Full Sleeve Red Wine",
+    tshirtPrice: "₹399",
+    tshirtCutOffPrice: "₹1299",
+  },
+  {
+    tshirtImage: "Rectangle 4",
+    tshirtBrandName: "Men Henley Neck ",
+    tshirtStyle: "Full Sleeve Red Wine",
+    tshirtPrice: "₹399",
+    tshirtCutOffPrice: "₹1299",
+  },
+  {
+    tshirtImage: "Rectangle 5",
+    tshirtBrandName: "Men Henley Neck ",
+    tshirtStyle: "Full Sleeve Red Wine",
+    tshirtPrice: "₹399",
+    tshirtCutOffPrice: "₹1299",
+  },
+  {
+    tshirtImage: "Rectangle 6",
+    tshirtBrandName: "Men Henley Neck ",
+    tshirtStyle: "Full Sleeve Red Wine",
+    tshirtPrice: "₹399",
+    tshirtCutOffPrice: "₹1299",
+  },
+];
+const tshirtData2 = [
+  {
+    tshirtImage: "Rectangle 3",
+    tshirtBrandName: "Men Henley Neck ",
+    tshirtStyle: "Full Sleeve Red Wine",
+    tshirtPrice: "₹399",
+    tshirtCutOffPrice: "₹1299",
+  },
+  {
+    tshirtImage: "Rectangle 4",
+    tshirtBrandName: "Men Henley Neck ",
+    tshirtStyle: "Full Sleeve Red Wine",
+    tshirtPrice: "₹399",
+    tshirtCutOffPrice: "₹1299",
+  },
+  {
+    tshirtImage: "Rectangle 5",
+    tshirtBrandName: "Men Henley Neck ",
+    tshirtStyle: "Full Sleeve Red Wine",
+    tshirtPrice: "₹399",
+    tshirtCutOffPrice: "₹1299",
+  },
+  {
+    tshirtImage: "Rectangle 6",
+    tshirtBrandName: "Men Henley Neck ",
+    tshirtStyle: "Full Sleeve Red Wine",
+    tshirtPrice: "₹399",
+    tshirtCutOffPrice: "₹1299",
+  },
+  
+];
 
 function App() {
   return (
@@ -18,15 +111,15 @@ function App() {
    <Navbar/>
    <Banner/>
    <Categorieslist/>
-   <TshirtGrid/>
+   <TshirtGrid tshirtData={tshirtData} tShirtGridParent={"Trending T-Shirts"}/>
+   <TshirtGrid tshirtData={tshirtData2} tShirtGridParent={"Featured Products"}/>
+   <TshirtGrid tshirtData={tshirtData2} tShirtGridParent={"New Products"}/>
+   <TshirtGrid tshirtData={tshirtData2} tShirtGridParent={"Best Selling Products"}/>
+   <SecondCardGrid/>
    <Categoriesbanner/>
-
-   <Button/>
-
    <Bannertwo/>
    <Stylishtees/>
    <Hurryup/>
-   
    </>
   );
 

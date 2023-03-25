@@ -2,11 +2,11 @@ import React from "react"
 
 
 export default function Card(props){
+    console.log(props.tshirtImage)
     return (
         <>
         <div className="tshirtcard">
             <div className="tshirtImage">
-            
             <img src={`/assets/tshirtgrid/${props.tshirtImage}.png`} alt=""/>
             </div>
            <div className="tshirtDetails">
