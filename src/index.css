@@ -3,8 +3,12 @@
   margin: 0%;
   box-sizing: border-box;
 }
-li {
-  list-style: none;
+
+img{
+    max-width: 100%;
+}
+li{
+    list-style: none;
 }
 
 .Contact_us {
@@ -176,3 +180,118 @@ li {
     height: 1px;
     background-color: #FFC7D1;
 } */
+/* Categories bannner */
+
+.cate_container{
+    margin-top: 68px;
+    
+}
+.cateone ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.12%;
+}
+
+.catetwo ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.12%;
+}
+
+/* button css */
+
+.viewall button{
+    background-color: #770015;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+
+/* bannner2 */
+
+.letthefashion img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.styletees{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* hurryup container */
+
+.hurryup_container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 68px 123px;
+    gap: 1.50%;
+}
+
+.hurryupone{
+    background: #CCCEA7;
+    /* padding: 76px 73px; */
+    text-align: center;
+}
+
+.hurryupone h5{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #1C1C1C;
+}
+
+.hurryupone p{
+    
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 600;
+font-size: 84px;
+line-height: 112px;
+text-align: center;
+color: #1C1C1C;
+}
+
+.hurryuptwo{
+    background: #D6BEBE;
+    text-align: center;
+    
+}
+
+.hurryuptwo h5{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #1C1C1C;
+}
+
+.hurryuptwo p{
+    
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 84px;
+    line-height: 112px;
+    text-align: center;
+    color: #1C1C1C;
+    }
+
+
