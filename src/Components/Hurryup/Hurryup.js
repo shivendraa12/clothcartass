@@ -12,12 +12,14 @@ export default function Hurryup(){
         <h5>Hurry Up!</h5>
         <p>85% OFF</p>
         <h5>Sale</h5>
+        <button>SHOP NOW</button>
         </div>
         <div className="hurryuptwo">
          <img src="/assets/discount 1.png" alt="" />
          <h5>Hurry Up!</h5>
          <p>85% OFF</p>
          <h5>Sale</h5>
+         <button>SHOP NOW</button>
         </div>
         </div>
     )

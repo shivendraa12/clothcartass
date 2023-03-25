@@ -103,6 +103,10 @@ const tshirtData2 = [
   },
   
 ];
+import Logos from './Components/Logos/Logos';
+import Searchbar from './Components/Searchbar/Searchbar';
+import Footer from './Components/Footer/Footer';
+import Lastfooter from './Components/Lastfooter/Lastfooter';
 
 function App() {
   return (
@@ -120,6 +124,10 @@ function App() {
    <Bannertwo/>
    <Stylishtees/>
    <Hurryup/>
+   <Logos/>
+   <Searchbar/>
+   <Footer/>
+   <Lastfooter/>
    </>
   );
 

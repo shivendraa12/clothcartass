@@ -241,7 +241,7 @@ li{
     display: flex;
     justify-content:center;
     align-items: center;
-    padding: 68px 123px;
+    margin-top: 68px;
     gap: 1.50%;
 }
 
@@ -249,6 +249,14 @@ li{
     background: #CCCEA7;
     /* padding: 76px 73px; */
     text-align: center;
+    min-width: 40%;
+    min-height: 604px;
+    
+}
+
+.hurryupone img{
+  margin-bottom: 42px;
+  margin-top: 54px;
 }
 
 .hurryupone h5{
@@ -259,6 +267,7 @@ li{
     line-height: 48px;
     text-align: center;
     color: #1C1C1C;
+    margin-bottom: 22px;
 }
 
 .hurryupone p{
@@ -270,12 +279,38 @@ font-size: 84px;
 line-height: 112px;
 text-align: center;
 color: #1C1C1C;
+margin-bottom: 22px;
+}
+
+.hurryupone button{
+  background-color: #CCCEA7;
+    border: 1px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 54px;    
+
 }
 
 .hurryuptwo{
     background: #D6BEBE;
     text-align: center;
+    min-width: 40%;
+    min-height: 604px;
     
+    
+}
+
+.hurryuptwo img{
+  margin-bottom: 42px;
+  margin-top: 54px;
 }
 
 .hurryuptwo h5{
@@ -286,6 +321,7 @@ color: #1C1C1C;
     line-height: 48px;
     text-align: center;
     color: #1C1C1C;
+    margin-bottom: 22px;
 }
 
 .hurryuptwo p{
@@ -297,6 +333,24 @@ color: #1C1C1C;
     line-height: 112px;
     text-align: center;
     color: #1C1C1C;
+    margin-bottom: 22px;
+    }
+
+    .hurryuptwo button{
+      background-color:#D6BEBE;
+        border: 1px solid white;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        margin-bottom: 54px;
+        
     }
 
     .secondCardGridParent{
@@ -331,3 +385,178 @@ text-align: center;
 .Card{
   flex-basis: 30%;
 }
+
+    /* for logos */
+
+
+  .logoss{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 68px;
+    text-align: center;
+    
+  }  
+
+
+  .logoss_return{
+    
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+
+  .logoss_product{
+    
+    padding-right: 90px;
+  }
+
+  .logoss_payment{
+    
+    padding-right: 90px;
+  }
+
+  .logoss_helpline{
+    padding-right: 90px;
+  }
+
+  
+  .offerdeals{
+    text-align: center;
+    margin-top: 68px;
+    background: linear-gradient(97.3deg, #AB001E -6.23%, #770015 105.09%);
+  }
+
+  
+
+
+  .offerdeals_text h5{
+    font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 48px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+  }
+.offerdeals_subscribe{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offerdeals_subscribe input{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+background: rgba(255, 255, 255, 0.32);
+min-width: 630px;
+color: #FFFFFF;
+padding: 15px 0;
+border: none;
+
+  }
+  .offerdeals_subscribe input::placeholder{
+    color: white;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+padding-left: 15px; ;
+  }
+
+  .offerdeals_subscribe button{
+    font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 20px;
+text-align: center;
+color: #770015;
+padding: 15px 10px
+  }
+
+
+  /* footer */
+   
+.footer{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 68px;
+
+}
+
+.footer_right ul{
+  display: flex;
+  gap: 10px;
+}
+
+.footer_left{
+  flex-basis: 25%;
+
+}
+.footer_left_list ul{
+  display: flex;
+}
+
+.footer_right ul li .footer_right_list ul{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.footer_left_list p{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 28px;
+color: #1C1C1C;
+}
+
+.footer_right_list h4{
+  font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+color: #770015;
+
+}
+
+.footer_right_list ul li{
+
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 34px;
+color: #1C1C1C;
+
+}
+
+
+/* lastfooter */
+
+.lastfooter {
+  background: #20050A;
+}
+
+.lastfooter h4{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 34px;
+color: #FFFFFF;
+text-align: center;
+}
+
+    
+
+
