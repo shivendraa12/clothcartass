@@ -10,6 +10,17 @@ img {
 li {
   list-style: none;
 }
+body{font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  
+  
+  text-align: center;}
+  h2{
+    font-family: 'Playfair Display';
+  }
 
 .Contact_us {
   background: #1f1f1f;

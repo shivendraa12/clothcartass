@@ -2,18 +2,15 @@ import React from "react";
 import Button from "../Button/Button";
 import Card from "./Card";
 
-
-
-
-const TshirtGrid = ({tshirtData,tShirtGridParent}) => {
+const TshirtGrid = ({ tshirtData, tShirtGridParent }) => {
   return (
     <>
-    <div className="tshirtGridHeading">
-<div className="line1"></div>
-<h2>{tShirtGridParent}</h2>
-<div className="line2"></div>
-    </div>
-      
+      <div className="tshirtGridHeading">
+        <div className="line1"></div>
+        <h2>{tShirtGridParent}</h2>
+        <div className="line2"></div>
+      </div>
+
       <div className="tshirtgridparent">
         {tshirtData.map((currentTshirt) => {
           return (
@@ -27,15 +24,9 @@ const TshirtGrid = ({tshirtData,tShirtGridParent}) => {
           );
         })}
       </div>
-      <Button/>
-      {/* <div className="tshirtgridparent">
-        {tshirtData.map((currentTshirt) => {
-         
-          return hELLO;
-        })}
-      </div> */}
+      <Button />
     </>
   );
 };
 
-export default TshirtGrid
+export default TshirtGrid;
