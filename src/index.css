@@ -569,6 +569,13 @@ cursor: pointer;
 .footer_left_list ul li {
   padding-right: 13px;
 }
+.footer_left_list ul li img {
+  transition: all 0.3s ease-in-out;
+}
+.footer_left_list ul li img:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
 
 .footer_right_list h4 {
   font-family: "Playfair Display";
@@ -644,10 +651,17 @@ cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 .blurpage ul li img:hover {
-  transform: scale(1.4);
+  transform: scale(1.3);
   cursor: pointer;
 }
 
 .blurpage img {
   width: unset;
+}
+.nav_bar .menu_icon img{
+  transition: all 0.3s ease-in-out;
+}
+.nav_bar .menu_icon img:hover{
+  transform: scale(1.3);
+  cursor: pointer;
 }
