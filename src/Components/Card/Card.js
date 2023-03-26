@@ -14,13 +14,30 @@ export default function Card(props) {
   return (
     <>
       <div className="tshirtcard">
-        {blurImage ? (
-          <div onMouseLeave={() => hoverHandlerInvert()}>Hello</div>
-        ) : (
-          <div className="tshirtImage" onMouseEnter={() => hoverHandler()}>
-            <img src={`/assets/tshirtgrid/${props.tshirtImage}.png`} alt="" />
-          </div>
-        )}
+        <div
+          className="tshirtImage"
+          onMouseEnter={() => hoverHandler()}
+          onMouseLeave={() => hoverHandlerInvert()}
+        >
+          <img src={`/assets/tshirtgrid/${props.tshirtImage}.png`} alt="" />
+          {blurImage && (
+            <div>
+              <div className="blurpage">
+                <ul>
+                  <li>
+                    <img src="/assets/shear.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="/assets/killer.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="/assets/carry.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          )}
+        </div>
 
         <div className="tshirtDetails">
           <div className="tshirtBrandName">{props.tshirtBrandName}</div>
