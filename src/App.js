@@ -115,13 +115,13 @@ function App() {
    <Navbar/>
    <Banner/>
    <Categorieslist/>
+   <Categoriesbanner/>
    <TshirtGrid tshirtData={tshirtData} tShirtGridParent={"Trending T-Shirts"}/>
    <TshirtGrid tshirtData={tshirtData2} tShirtGridParent={"Featured Products"}/>
+   <Bannertwo/>
    <TshirtGrid tshirtData={tshirtData2} tShirtGridParent={"New Products"}/>
    <TshirtGrid tshirtData={tshirtData2} tShirtGridParent={"Best Selling Products"}/>
    <SecondCardGrid/>
-   <Categoriesbanner/>
-   <Bannertwo/>
    <Stylishtees/>
    <Hurryup/>
    <Logos/>
