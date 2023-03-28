@@ -1,20 +1,39 @@
-
+import React,{Suspense,lazy} from 'react';
 import './App.css';
-import Banner from './Components/Banner/Banner';
-import  TshirtGrid  from './Components/Card/TshirtGrid';
-import Bannertwo from './Components/Bannertwo/Bannertwo';
-import Categoriesbanner from './Components/Categoriesbanner/Categoriesbanner';
-import Categorieslist from './Components/Categorieslist/Categorieslist';
-import Contactus from './Components/Contactus/Contactus';
-import Hurryup from './Components/Hurryup/Hurryup';
-import Navbar from './Components/Navbar/Navbar';
-import Stylishtees from './Components/Stylishtees/Stylishtees';
-import SecondCardGrid from './Components/2ndCard/2ndCardGrid';
+// import Banner from './Components/Banner/Banner';
+// import  TshirtGrid  from './Components/Card/TshirtGrid';
+// import Bannertwo from './Components/Bannertwo/Bannertwo';
+// import Categoriesbanner from './Components/Categoriesbanner/Categoriesbanner';
+// import Categorieslist from './Components/Categorieslist/Categorieslist';
+// import Contactus from './Components/Contactus/Contactus';
+// import Hurryup from './Components/Hurryup/Hurryup';
+// import Navbar from './Components/Navbar/Navbar';
+// import Stylishtees from './Components/Stylishtees/Stylishtees';
+// import SecondCardGrid from './Components/2ndCard/2ndCardGrid';
 
-import Logos from './Components/Logos/Logos';
-import Searchbar from './Components/Searchbar/Searchbar';
-import Footer from './Components/Footer/Footer';
-import Lastfooter from './Components/Lastfooter/Lastfooter';
+// import Logos from './Components/Logos/Logos';
+// import Searchbar from './Components/Searchbar/Searchbar';
+// import Footer from './Components/Footer/Footer';
+// import Lastfooter from './Components/Lastfooter/Lastfooter';
+
+
+
+
+const Contactus = lazy(()=>import('./Components/Contactus/Contactus'))
+const Navbar = lazy(()=>import('./Components/Navbar/Navbar'))
+const Banner = lazy(()=>import('./Components/Banner/Banner'))
+const Categorieslist = lazy(()=>import('./Components/Categorieslist/Categorieslist'))
+const Categoriesbanner = lazy(()=>import('./Components/Categoriesbanner/Categoriesbanner'))
+const TshirtGrid = lazy(()=>import('./Components/Card/TshirtGrid'))
+const Bannertwo = lazy(()=>import('./Components/Bannertwo/Bannertwo'))
+const SecondCardGrid = lazy(()=>import('./Components/2ndCard/2ndCardGrid'))
+const Stylishtees = lazy(()=>import('./Components/Stylishtees/Stylishtees'))
+const Hurryup = lazy(()=>import('./Components/Hurryup/Hurryup'))
+const Logos = lazy(()=>import('./Components/Logos/Logos'))
+const Searchbar = lazy(()=>import('./Components/Searchbar/Searchbar'))
+const Footer = lazy(()=>import('./Components/Footer/Footer'))
+const Lastfooter = lazy(()=>import('./Components/Lastfooter/Lastfooter'))
+
 
 
 const tshirtData = [
@@ -110,12 +129,14 @@ const tshirtData2 = [
 
 function App() {
   return (
-   <>
+   
+   <Suspense fallback={<div>please wait...... Page is loading</div>}>
    <Contactus/>
    <Navbar/>
    <Banner/>
    <Categorieslist/>
    <Categoriesbanner/>
+
    <TshirtGrid tshirtData={tshirtData} tShirtGridParent={"Trending T-Shirts"}/>
    <TshirtGrid tshirtData={tshirtData2} tShirtGridParent={"Featured Products"}/>
    <Bannertwo/>
@@ -128,7 +149,7 @@ function App() {
    <Searchbar/>
    <Footer/>
    <Lastfooter/>
-   </>
+   </Suspense>
   );
 
 
